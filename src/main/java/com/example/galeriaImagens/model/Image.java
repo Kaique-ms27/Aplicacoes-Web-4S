@@ -1,5 +1,6 @@
-package com.example.galeriaImagens.entity;
+package com.example.galeriaImagens.model;
 
+import com.example.galeriaImagens.enuns.ImageExtension;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
