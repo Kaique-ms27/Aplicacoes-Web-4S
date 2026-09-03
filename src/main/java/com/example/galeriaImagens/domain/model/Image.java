@@ -1,4 +1,4 @@
-package com.example.galeriaImagens.model;
+package com.example.galeriaImagens.domain.model;
 
 import com.example.galeriaImagens.enuns.ImageExtension;
 import jakarta.persistence.*;
@@ -25,7 +25,7 @@ public class Image {
     @Column
     private String name;
     @Column
-    private String size;
+    private long size;
     @Column
     @Enumerated(EnumType.STRING)
     private ImageExtension extension;
