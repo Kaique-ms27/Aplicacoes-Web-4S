@@ -12,21 +12,23 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class GaleriaImagensApplication {
+    /*
+        @Bean
+        public CommandLineRunner commandLineRunner(@Autowired ImageRepository repository) {
+            return args -> {
+                Image image = Image
+                        .builder()
+                        .extension(ImageExtension.PNG)
+                        .name("MyImage")
+                        .tags("teste")
+                        .size(1000L)
+                        .build();
 
-    @Bean
-    public CommandLineRunner commandLineRunner(@Autowired ImageRepository repository) {
-        return args -> {
-            Image image = Image
-                    .builder()
-                    .extension(ImageExtension.PNG)
-                    .name("MyImage")
-                    .tags("teste")
-                    .size(1000L)
-                    .build();
+                repository.save(image);
+            };
+        }
 
-            repository.save(image);
-        };
-    }
+     */
 
 	public static void main(String[] args) {
 		SpringApplication.run(GaleriaImagensApplication.class, args);
